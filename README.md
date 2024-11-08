@@ -1,7 +1,7 @@
 # GLSP
 Eclipse GLSP (Graphical Language Server Platform) is a client-server framework for building web-based diagram editors and is core for developing languages in cinco cloud.
 
-One important thing to know is you interact with these glsp via actions.
+One important thing to know is you interact with these glsp methods via actions.
 **You create an action and then dispatch that action.** Which is then handled by the server asynchronously.
 
 If class method you are overriding has return type `Promise<Action[]> | Action[]`, you simply need to return the actions() from the method `return [Action1,Action1]` or `return yourListOfActions`
